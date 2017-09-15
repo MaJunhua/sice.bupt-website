@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>信息与通信工程学院</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive academy table.">
+    <link  rel="stylesheet" type="text/css" href="/stylesheets/pure-min.css">
+    <link  rel="stylesheet" type="text/css" href="/stylesheets/jquery-dropdown.css">
+    <link  rel="stylesheet" type="text/css" href="/stylesheets/content.css">
+    <!--[if lte IE 8]> 
+        <link rel="stylesheet" href="stylesheets/grids-responsive-old-ie-min.css">
+    <![endif]-->
+
+    <!--[if gt IE 8]><!-->   
+        <link rel="stylesheet" type="text/css" href="/stylesheets/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <script data-main="/javascripts/main" src="/javascripts/require.js"></script>
+</head>
+<body>
+
+<div id="background-img">
+    <!-- <img src="images/background.jpg"> -->
+</div>
+<div id="header">
+    <div id="head-container">
+        <div id="header-top">
+            <div id="header-top-left">
+                <img src="/images/logo.png">
+                <div id="logo-name">
+                    <p class="top">信息与通信工程学院</p>
+                    <p class="buttom">School of Information and Communication Engineering</p>
+                </div>
+            </div>
+            <div id="header-top-right">
+                <div class="top-menu">
+                    <span><a href="/">首页</a></span><div></div
+                    ><span><a id="login">登陆</a></span><div></div
+                    ><span>English Version</span><div></div>
+                    
+                </div>
+                <div id="search" class="pure-form">
+                    <input type="text">
+                    <img src="/images/search.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id='cssmenu'>
+<ul>
+    {{#each menu}}
+    <li><a href='#'><span>{{@key}}</span></a>
+        <ul>
+            {{#each this}}
+                <li data-fid="parent-{{this.fid}}"><a href="/article_list/{{this.fid}}/{{this.id}}"><span>{{this.channel}}</span></a>
+                </li>
+            {{/each}}
+        </ul>
+    </li>
+   {{/each}}
+</ul>
+</div>
+
+{{{body}}}
+
+<div class="footer">
+    <div class="frend-link">
+        <span>友情链接:</span>
+        <a href="#">北邮人论坛</a>
+        <a href="#">北邮人论坛</a>
+        <a href="#">北邮人论坛</a>
+        <a href="#">北邮人论坛</a>
+    </div>
+    <div class="information">
+        <span>北京邮电大学 信息与通信工程学院 版权所有 访问量：35次 地址：北京市海淀区西土城路十号，151信箱 邮编100876 联系电话：01062283295</span>
+    </div>
+</div>
+</body>
+</html>

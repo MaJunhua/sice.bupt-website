@@ -1,0 +1,360 @@
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+html {
+    margin: 0px;
+    padding: 0px;
+    color: #526066;
+    font-family: 微软雅黑, 宋体, Arial, sans-serif;
+    background-image: url('../images/background.jpg');
+
+}
+
+h2, h3 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    line-height: 26px;
+}
+
+#header{
+    height: 90px;
+    background-color: #0b7fab;
+}
+
+#head-container{
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-top{
+    height: 100%;
+    color: #ffffff;
+}
+
+#header-top-left{
+    height: 100%;
+    float: left;
+}
+
+#header-top-left img{
+    height: 100%;
+}
+
+#header-top-right{
+    display: inline-block;
+    float: right;
+    height: 100%;
+}
+
+#header-top-right .top-menu{
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+#header-top-right .top-menu span{
+    display: inline-block;
+    border-right: solid 1px #ffffff;
+    padding: 0px 4px 0px 0px;
+}
+
+#search{
+    color: #000000;
+    margin-top: 12px;
+}
+
+#search input{
+    height: 30px
+}
+
+#logo-name{
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 23px;
+    margin-left: 9px;
+    display: none;
+}
+
+#logo-name p{
+    margin: 0px;
+}
+
+#logo-name .top{
+    font-size: 26px;
+}
+
+#logo-name .buttom{
+    font-size: 13px;
+}
+
+
+#header-menu{
+    height: 25%;
+}
+
+#header-menu ul{
+    height: 25%;
+}
+
+#menu .pure-menu{
+    position: relative;
+}
+
+#menu .pure-menu-link, #menu .pure-menu-heading{
+    padding: 6px;
+}
+#menu .menu{
+    background-color: #f2f2f2;
+}
+#menu .menu a{
+    color: #305566;
+}
+/*
+ * -- Layout Styles --
+ */
+.l-content {
+    margin: 0 auto;
+}
+
+
+/*
+ * -- MENU STYLES --
+ * Make the menu have a very faint box-shadow.
+ */
+.pure-menu {
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+
+
+
+/*
+ * -- BANNER --
+ * The top banner with the headings. By using a combination
+ * of `display: table;` and `display: table-cell;`, we can
+ * vertically center the text.
+ */
+
+
+/*
+ * -- academy TABLE WRAPPER --
+ * This elrement wraps up all the academy table elrements
+ */
+ .academy-tables,
+ .information {
+    max-width: 947px;
+    margin: 0 auto;
+ }
+.academy-tables {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/*
+ * -- academy TABLE  --
+ * Every academy table has the .academy-table class
+ */
+.academy-table {
+    margin: 0 12px 32px;
+}
+
+/*
+ * -- academy TABLE HEADER COLORS --
+ * Choose a different color based on the type of academy table.
+ */
+
+/*
+ * -- academy TABLE PRICE --
+ * Styles for the price and the corresponding <span>per month</span>
+ */
+.academy-table-price {
+    font-size: 96px;
+    margin: 3px 0 0;
+    font-weight: 100;
+}
+    .academy-table-price span {
+        display: block;
+        text-transform: uppercase;
+        font-size: 3px;
+        padding-bottom: 32px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+        *color: #fff;
+    }
+
+.academy-table-img{
+    width: 100%;
+    font-size: 0px;
+    vertical-align: bottom;
+}
+
+.academy-table-img img{width: 100%;}
+
+/*
+ * -- academy TABLE LIST ELremENTS --
+ * Styles for the individual date elrements within each academy table
+ */
+.academy-date{
+    height: 50px;
+    padding: 0 12px 0 12px;
+    margin-bottom: 42px;
+    font-size: 18px;
+    font-weight: 900;
+
+}
+
+.academy-date .left{
+    display: inline-block;
+    height: 100%;
+    width: 36.7%;
+    background-color: rgba(255,102,101,0.8);
+    *background-color: rgb(255,102,101);
+    background-color: rgb(255,102,101)\0;
+    float: left;
+    line-height: 50px;
+    color: #ffffff;
+}
+.academy-date .right{
+    display: inline-block;
+    height: 100%;
+    width: 63.3%;
+    background-color: #ffffff;
+    line-height: 50px;
+}
+
+/*
+ * -- academy TABLE LIST --
+ * Each academy table has a <ul> which is denoted by the .academy-table-list class
+ */
+.academy-table-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+
+/*
+ * -- academy TABLE LIST ELremENTS --
+ * Styles for the individual list elrements within each academy table
+ */
+.academy-table-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 14px;
+}
+
+.academy-table-list span{
+    display: inline-block;
+    font-size: 13px;
+}
+
+.academy-table-list li>.before{
+    height: 14px;
+    width: 3px;
+    float:left;
+    background-color: red;
+}
+.academy-table-list li>.content{
+    width: 67%;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}
+
+.academy-table-list li>.time{
+    float: right;
+    #float: none;
+    vertical-align: top;
+}
+
+/*
+ * -- academy TABLE BUTTON --
+ * Styles for the "Choose" button at the bottom of a academy table.
+ * This inherits from Pure Button.
+ */
+.button-choose {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    border-radius: 32px;
+    font-weight: bold;
+    position: relative;
+    bottom: -25px;
+}
+
+.information-head {
+    color: black;
+    font-weight: 500;
+}
+
+.footer {
+    background: #305566;
+    color: #888;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .footer a {
+        color: #ddd;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+.foot-line{
+    background: #305566;
+    height: 6px;
+}
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, we want to slightly adjust the size of the banner
+ * text and add some vertical space between the various academy tables
+ */
+
+
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+@media (min-width: 480px){
+    .academy-tables{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .footer a {
+        margin-left: 30px;
+    }
+}
+@media (min-width: 767px) {
+    .academy-table {
+        margin-bottom: 0;
+    }
+    .academy-tables{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .footer{
+        width: 80%;
+    }
+    .footer a {
+        margin-left: 70px;
+    }
+    #logo-name{
+        display: inline-block;
+    }
+}
+@media (min-width: 972px) {
+    #head-container{
+        width: 972px;
+    }
+}

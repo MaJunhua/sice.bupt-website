@@ -1,0 +1,5 @@
+1、本项目的运行需要nodejs环境，需要安装node才能运行服务器，官网https://nodejs.org/
+
+2、安装完成后，在cmd（windows环境）或linux终端进入到本目录，输入node app.js打开服务器
+
+3、打开浏览器，输入localhost:3000访问

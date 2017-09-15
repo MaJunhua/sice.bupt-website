@@ -1,0 +1,65 @@
+<div class="side_content">
+ <div class="content-left">
+                <div class="content-con">
+                    <div class="content-con-left" id="leftBar">
+                        <table width="128px" align="left" cellpadding="0" cellspacing="0">
+                           <tbody id="sidemenu">
+                                {{#each currentSideMenu.data}}
+                                    <tr><td>
+                                        <a href="/article_list/{{../currentSideMenu.fid}}/{{this.id}}">{{this.name}}</a>
+                                    </td></tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div> 
+                    
+            </div>
+            <div class="content-middle">
+                <div class="content-con">
+                    <div class="content-con-middle" id="rightContent" style="color:rgb(69,69,69);">
+                        <table class="content-con-middle-list" border="0" align="center" cellpadding="0" cellspacing="9" width="100%">
+                            <tbody>
+                                {{{content.content}}}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div> 
+                <div id="rightContentLinkPage">
+                    <table width="63%" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td valign="middle" style="font-size:0.8em" align="left">共 5 行(分 1 页)&nbsp;&nbsp;当前第1 页 </td>
+                                <td align="right" style="font-size:0.8em">
+                                    <table border="0" cellspacing="1" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="middle" align="center" style="font-size:0.8em">
+                                                    <font style="color:#c0c0c0">首页&nbsp;&nbsp;上一页&nbsp;&nbsp;</font><font style="color:#c0c0c0">下一页&nbsp;&nbsp;末页</font>
+                                                </td>
+                                                <td valign="middle" align="center" style="font-size:0.8em"><br>
+                                                    <form action="./北京邮电大学信息与通信工程学院_files/北京邮电大学信息与通信工程学院.html" method="post">
+                                                        <select name="StartPage">
+                                                            <option value="1" selected="">1</option>
+                                                        </select>
+                                                        <input type="submit" value="go">
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="GraduateMessge"></div>
+            </div>
+  </div>
+ </div>  
+
+

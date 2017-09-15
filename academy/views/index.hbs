@@ -1,0 +1,68 @@
+
+<div class="l-content" style="display:none;">
+    <div class="academy-tables pure-g">
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="academy-table academy-table-free">
+                <div class="academy-table-header">
+                    <div class="academy-table-img">
+                    	<img src="/images/academy-activity.png">
+                    </div>
+                </div>
+                <ul class="academy-table-list">
+                    {{#each content_1}}
+                    <li data-id="parent-{{this.fid}}">
+                        <span class="before"></span>
+                        <span class="content"><a href="article/2/{{this.id}}">{{this.title}}</a></span>
+                        <span class="time">{{this.date}}</span>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="academy-table academy-table-biz academy-table-selected">
+                <div class="academy-table-header">
+                    <div class="academy-table-img">
+                    	<img src="/images/academic-information.png">
+                    </div>
+                </div>
+
+                <ul class="academy-table-list">
+                    {{#each content_2}}
+                    <li data-id="parent-{{this.fid}}">
+                        <span class="before"></span>
+                        <span class="content"><a href="article/1/{{this.id}}">{{this.title}}</a></span>
+                        <span class="time">{{this.date}}</span>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="academy-date">
+                <span class="left">5月4日</span>
+                <span class="right">教学第十周 周一</span>
+            </div>
+            <div class="academy-table academy-table-enterprise">
+                <div class="academy-table-header">
+                    <div class="academy-table-img">
+                        <img src="/images/pub.png">
+                    </div>
+                </div>
+
+                <ul class="academy-table-list">
+                    {{#each content_3}}
+                    <li data-id="parent-{{this.fid}}">
+                        <span class="before"></span>
+                        <span class="content"><a href="article/1/{{this.id}}">{{this.title}}</a></span>
+                        <span class="time">{{this.date}}</span>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
